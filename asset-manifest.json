@@ -1,13 +1,15 @@
 {
   "files": {
     "main.css": "/ricky_rainfrog/static/css/main.ea8b2956.css",
-    "main.js": "/ricky_rainfrog/static/js/main.e694e6af.js",
+    "main.js": "/ricky_rainfrog/static/js/main.bd3ce83c.js",
+    "static/media/ricky_vampire.jpg": "/ricky_rainfrog/static/media/ricky_vampire.8f81a8fb9ec835a6f69f.jpg",
+    "static/media/ricky_santa.jpg": "/ricky_rainfrog/static/media/ricky_santa.a982876d3353e91a4350.jpg",
     "index.html": "/ricky_rainfrog/index.html",
     "main.ea8b2956.css.map": "/ricky_rainfrog/static/css/main.ea8b2956.css.map",
-    "main.e694e6af.js.map": "/ricky_rainfrog/static/js/main.e694e6af.js.map"
+    "main.bd3ce83c.js.map": "/ricky_rainfrog/static/js/main.bd3ce83c.js.map"
   },
   "entrypoints": [
     "static/css/main.ea8b2956.css",
-    "static/js/main.e694e6af.js"
+    "static/js/main.bd3ce83c.js"
   ]
 }
