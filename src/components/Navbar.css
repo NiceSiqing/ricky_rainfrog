@@ -1,0 +1,91 @@
+/* Navbar 容器 */
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* 左右对齐 */
+  align-items: center;
+  /* 垂直居中 */
+  padding: 10px 20px;
+  background-color: rgba(173, 216, 230, 0.9);
+  /* 浅蓝色背景 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* 阴影效果 */
+}
+
+
+/* Ricky Rain Frog 标题样式 */
+nav h1 {
+  font-family: 'Baloo 2', cursive;
+  /* 字体风格 */
+  font-size: 28px;
+  /* 字体大小 */
+  font-weight: 600;
+  /* 加粗字体 */
+  color: #5a9;
+  /* 柔和的绿色 */
+  background: linear-gradient(90deg, #5a9, #74c, #6ca);
+  /* 柔和的蓝绿色渐变 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* 渐变文字效果 */
+  margin: 0;
+}
+
+/* 中间的导航链接容器 */
+.nav-links {
+  display: flex;
+  gap: 30px;
+  /* 链接之间的间距 */
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  /* 占据中间位置 */
+}
+
+/* 导航链接 */
+.nav-links a {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  /* 默认深灰色，简约风格 */
+  text-decoration: none;
+  /* 去掉下划线 */
+  transition: transform 0.3s ease, text-decoration 0.3s ease, color 0.3s ease;
+  /* 动态效果 */
+}
+
+/* 鼠标悬停时 */
+.nav-links a:hover {
+  transform: scale(1.1);
+  /* 放大 */
+  text-decoration: underline;
+  /* 显示下划线 */
+  color: #82c5e6;
+  /* 柔和的浅蓝色 */
+}
+
+
+/* Take Ricky Home 按钮样式 */
+.shop-button {
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffa07a;
+  /* 柔和的浅橙色 */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  /* 更圆润的边框 */
+  text-decoration: none;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* 鼠标悬停时 */
+.shop-button:hover {
+  transform: scale(1.2);
+  background-color: #ffdab9;
+  /* 浅珊瑚色，更柔和 */
+  color: #333;
+  /* 深灰色文字 */
+}

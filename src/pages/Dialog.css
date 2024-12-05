@@ -1,0 +1,56 @@
+.dialog-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.dialog-image {
+  width: 100%;
+  /* 填充整个宽度 */
+  max-width: 400px;
+  /* 最大宽度 400px */
+  max-height: 400px;
+  /* 最大高度 400px */
+  object-fit: contain;
+  /* 保持比例，填充父容器 */
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.dialog-controls button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dialog-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.dialog-group-controls button {
+  margin: 5px;
+  padding: 10px 15px;
+  font-size: 14px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  background-color: white;
+  color: #007bff;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dialog-group-controls button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.dialog-group-controls button:hover:not(.active) {
+  background-color: #f0f8ff;
+}
