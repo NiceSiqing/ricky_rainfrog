@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/ricky_rainfrog/static/css/main.e71fc602.css",
-    "main.js": "/ricky_rainfrog/static/js/main.f3bc3c5c.js",
+    "main.css": "/ricky_rainfrog/static/css/main.b30e8258.css",
+    "main.js": "/ricky_rainfrog/static/js/main.711305ff.js",
     "static/media/driving.mp4": "/ricky_rainfrog/static/media/driving.769c22acef254b23a1a8.mp4",
     "static/media/take_shower.mp4": "/ricky_rainfrog/static/media/take_shower.ee59c7910717af9a7899.mp4",
     "static/media/dancing.mp4": "/ricky_rainfrog/static/media/dancing.091d93ee2b486f45ecdd.mp4",
@@ -30,11 +30,11 @@
     "static/media/halloween.jpg": "/ricky_rainfrog/static/media/halloween.17a9b0f894c8ca40dc51.jpg",
     "static/media/frog.jpg": "/ricky_rainfrog/static/media/frog.3315d48d1f90b730001d.jpg",
     "index.html": "/ricky_rainfrog/index.html",
-    "main.e71fc602.css.map": "/ricky_rainfrog/static/css/main.e71fc602.css.map",
-    "main.f3bc3c5c.js.map": "/ricky_rainfrog/static/js/main.f3bc3c5c.js.map"
+    "main.b30e8258.css.map": "/ricky_rainfrog/static/css/main.b30e8258.css.map",
+    "main.711305ff.js.map": "/ricky_rainfrog/static/js/main.711305ff.js.map"
   },
   "entrypoints": [
-    "static/css/main.e71fc602.css",
-    "static/js/main.f3bc3c5c.js"
+    "static/css/main.b30e8258.css",
+    "static/js/main.711305ff.js"
   ]
 }
