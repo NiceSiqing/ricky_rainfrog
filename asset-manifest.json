@@ -1,15 +1,40 @@
 {
   "files": {
-    "main.css": "/ricky_rainfrog/static/css/main.ea8b2956.css",
-    "main.js": "/ricky_rainfrog/static/js/main.bd3ce83c.js",
+    "main.css": "/ricky_rainfrog/static/css/main.e71fc602.css",
+    "main.js": "/ricky_rainfrog/static/js/main.f3bc3c5c.js",
+    "static/media/driving.mp4": "/ricky_rainfrog/static/media/driving.769c22acef254b23a1a8.mp4",
+    "static/media/take_shower.mp4": "/ricky_rainfrog/static/media/take_shower.ee59c7910717af9a7899.mp4",
+    "static/media/dancing.mp4": "/ricky_rainfrog/static/media/dancing.091d93ee2b486f45ecdd.mp4",
+    "static/media/spill_garbage.mp4": "/ricky_rainfrog/static/media/spill_garbage.33e6cc04daa827f74351.mp4",
+    "static/media/swimming.mp4": "/ricky_rainfrog/static/media/swimming.d678402e15c0ca0f72c7.mp4",
     "static/media/ricky_vampire.jpg": "/ricky_rainfrog/static/media/ricky_vampire.8f81a8fb9ec835a6f69f.jpg",
     "static/media/ricky_santa.jpg": "/ricky_rainfrog/static/media/ricky_santa.a982876d3353e91a4350.jpg",
+    "static/media/RickyRainFrogHeadphones.jpg": "/ricky_rainfrog/static/media/RickyRainFrogHeadphones.bee1eb5dcaa6a557a299.jpg",
+    "static/media/RickyRainFrog.jpg": "/ricky_rainfrog/static/media/RickyRainFrog.fdd7e4e2e14df8cc509f.jpg",
+    "static/media/bathroom_4.jpg": "/ricky_rainfrog/static/media/bathroom_4.4bf87e70a89531d0c76f.jpg",
+    "static/media/headphones.jpg": "/ricky_rainfrog/static/media/headphones.3b748d04586560b623cb.jpg",
+    "static/media/walking.jpg": "/ricky_rainfrog/static/media/walking.a449467e94ae7d61c2fd.jpg",
+    "static/media/bathroom_5.jpg": "/ricky_rainfrog/static/media/bathroom_5.5c8dea7a63dd024e34d6.jpg",
+    "static/media/RickyRainFrogVampire.jpg": "/ricky_rainfrog/static/media/RickyRainFrogVampire.35133489f4e18907a501.jpg",
+    "static/media/bathroom_3.jpg": "/ricky_rainfrog/static/media/bathroom_3.8ec4b396bb69bc1c55aa.jpg",
+    "static/media/RickyRainFrogRubberRing.jpg": "/ricky_rainfrog/static/media/RickyRainFrogRubberRing.7b68409024cd1a885b53.jpg",
+    "static/media/bathroom_6.jpg": "/ricky_rainfrog/static/media/bathroom_6.ca0f6545c5f0def4273f.jpg",
+    "static/media/christmas.jpg": "/ricky_rainfrog/static/media/christmas.12feb348ef8b27affce5.jpg",
+    "static/media/ChristmasTreeRickyRainFrog.jpg": "/ricky_rainfrog/static/media/ChristmasTreeRickyRainFrog.412c870b13c45bb22e00.jpg",
+    "static/media/bathroom_1.jpg": "/ricky_rainfrog/static/media/bathroom_1.041357067cfe162d863c.jpg",
+    "static/media/bathroom_2.jpg": "/ricky_rainfrog/static/media/bathroom_2.46a1f3d3c5388c75bd9d.jpg",
+    "static/media/SantaRickyRainFrog.jpg": "/ricky_rainfrog/static/media/SantaRickyRainFrog.896dd19617cc709f02d1.jpg",
+    "static/media/baking.jpg": "/ricky_rainfrog/static/media/baking.e86bfe431edb0412238d.jpg",
+    "static/media/reading.jpg": "/ricky_rainfrog/static/media/reading.233b0749fab8e1b6c313.jpg",
+    "static/media/vampire.jpg": "/ricky_rainfrog/static/media/vampire.187281e145236ef5803b.jpg",
+    "static/media/halloween.jpg": "/ricky_rainfrog/static/media/halloween.17a9b0f894c8ca40dc51.jpg",
+    "static/media/frog.jpg": "/ricky_rainfrog/static/media/frog.3315d48d1f90b730001d.jpg",
     "index.html": "/ricky_rainfrog/index.html",
-    "main.ea8b2956.css.map": "/ricky_rainfrog/static/css/main.ea8b2956.css.map",
-    "main.bd3ce83c.js.map": "/ricky_rainfrog/static/js/main.bd3ce83c.js.map"
+    "main.e71fc602.css.map": "/ricky_rainfrog/static/css/main.e71fc602.css.map",
+    "main.f3bc3c5c.js.map": "/ricky_rainfrog/static/js/main.f3bc3c5c.js.map"
   },
   "entrypoints": [
-    "static/css/main.ea8b2956.css",
-    "static/js/main.bd3ce83c.js"
+    "static/css/main.e71fc602.css",
+    "static/js/main.f3bc3c5c.js"
   ]
 }
