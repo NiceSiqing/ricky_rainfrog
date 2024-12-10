@@ -1,66 +1,65 @@
 import React, { useState } from 'react';
 import './Dialog.css';
+import bathroom1 from '../assets/bathroom/bathroom_1.jpg';
+import bathroom2 from '../assets/bathroom/bathroom_2.jpg';
+import bathroom3 from '../assets/bathroom/bathroom_3.jpg';
+import bathroom4 from '../assets/bathroom/bathroom_4.jpg';
+import bathroom5 from '../assets/bathroom/bathroom_5.jpg';
+import bathroom6 from '../assets/bathroom/bathroom_6.jpg';
+import baking from '../assets/expectation_reality/baking.jpg';
+import reading from '../assets/expectation_reality/reading.jpg';
+import walking from '../assets/expectation_reality/walking.jpg';
+import headphones from '../assets/summer/headphones.jpg';
+import vampire from '../assets/summer/vampire.jpg';
 
-// 图片数据，按组分类
+// Image data categorized by groups
 const dialogues = {
-  bathroom: [
-    '/assets/bathroom/bathroom_1.jpg',
-    '/assets/bathroom/bathroom_2.jpg',
-    '/assets/bathroom/bathroom_3.jpg',
-    '/assets/bathroom/bathroom_4.jpg',
-    '/assets/bathroom/bathroom_5.jpg',
-    '/assets/bathroom/bathroom_6.jpg',
-  ],
-  expectation_reality: [
-    '/assets/expectation_reality/baking.jpg',
-    '/assets/expectation_reality/reading.jpg',
-    '/assets/expectation_reality/walking.jpg',
-  ],
-  summer: [
-    '/assets/summer/headphones.jpg',
-    '/assets/summer/vampire.jpg',
-  ],
+  bathroom: [bathroom1, bathroom2, bathroom3, bathroom4, bathroom5, bathroom6],
+  expectation_reality: [baking, reading, walking],
+  summer: [headphones, vampire],
 };
 
 function Dialog() {
-  const [currentGroup, setCurrentGroup] = useState('bathroom'); // 当前组
-  const [index, setIndex] = useState(0); // 当前组内图片索引
+  const [currentGroup, setCurrentGroup] = useState('bathroom'); // Current group
+  const [index, setIndex] = useState(0); // Current image index within the group
 
-  const currentImages = dialogues[currentGroup]; // 当前组的图片数组
+  const currentImages = dialogues[currentGroup]; // Image array for the current group
 
-  // 切换到下一张图片
+  // Switch to the next image
   const nextDialog = () => {
     if (index < currentImages.length - 1) {
       setIndex(index + 1);
     }
   };
 
-  // 切换到上一张图片
+  // Switch to the previous image
   const prevDialog = () => {
     if (index > 0) {
       setIndex(index - 1);
     }
   };
 
-  // 切换图片组
+  // Change the image group
   const changeGroup = (group) => {
     setCurrentGroup(group);
-    setIndex(0); // 重置索引
+    setIndex(0); // Reset the index
   };
 
   return (
     <div className="dialog-container">
-      {/* 图片显示区域 */}
-      <img
-        src={currentImages[index]}
-        alt={`${currentGroup} Dialog ${index + 1}`}
-        className="dialog-image"
-      />
+      {/* Image display area */}
+      <div className="dialog-image-wrapper">
+        <img
+          src={currentImages[index]}
+          alt={`${currentGroup} Dialog ${index + 1}`}
+          className="dialog-image"
+        />
+      </div>
       <p>
         {currentGroup.toUpperCase()} - {index + 1}/{currentImages.length}
       </p>
 
-      {/* 按钮区域 */}
+      {/* Controls for navigation */}
       <div className="dialog-controls">
         <button onClick={prevDialog} disabled={index === 0}>
           Previous
@@ -70,7 +69,7 @@ function Dialog() {
         </button>
       </div>
 
-      {/* 图片组切换区域 */}
+      {/* Group selection controls */}
       <div className="dialog-group-controls">
         {Object.keys(dialogues).map((group) => (
           <button

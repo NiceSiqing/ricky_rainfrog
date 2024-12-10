@@ -1,0 +1,152 @@
+/* Page container */
+.shop-container {
+  padding: 20px;
+  background: linear-gradient(135deg, #f0f8ff, #e8f5e9);
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Notification styles */
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #ffc107;
+  color: #333;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInOut 3s ease-in-out;
+}
+
+/* Fade-in and fade-out effect for notifications */
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* Page title */
+.shop-container h1 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 36px;
+  color: #2a2a2a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Product grid */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Individual product card */
+.product-card {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 12px;
+  text-align: center;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Product image */
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Product title */
+.product-card h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Product price */
+.product-card p {
+  font-size: 16px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+/* Add to cart button */
+.product-card button {
+  background-color: #ff5722;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.product-card button:hover {
+  background-color: #e64a19;
+}
+
+/* Cart summary */
+.cart-summary {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-summary h2 {
+  font-family: 'Baloo 2', cursive;
+  font-size: 24px;
+  color: #2a2a2a;
+  margin-bottom: 10px;
+}
+
+.cart-summary ul {
+  list-style: none;
+  padding: 0;
+}
+
+.cart-summary ul li {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+/* Total price styles */
+.cart-summary .total-price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 10px;
+}

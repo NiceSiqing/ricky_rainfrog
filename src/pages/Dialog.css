@@ -3,54 +3,139 @@
   margin: 20px auto;
 }
 
+/* Image styles */
 .dialog-image {
   width: 100%;
-  /* 填充整个宽度 */
-  max-width: 400px;
-  /* 最大宽度 400px */
-  max-height: 400px;
-  /* 最大高度 400px */
+  max-width: 500px;
+  /* Image width */
+  max-height: 500px;
+  /* Image height */
   object-fit: contain;
-  /* 保持比例，填充父容器 */
-  border: 2px solid #ccc;
-  border-radius: 10px;
+  /* Maintain aspect ratio */
+  border: 4px solid #90caf9;
+  /* Soft blue border */
+  border-radius: 15px;
+  /* Rounded corners */
   margin: 20px 0;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Add shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Hover effect for the image */
+.dialog-image:hover {
+  transform: scale(1.05);
+  /* Slight zoom */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  /* Deepen shadow */
+}
+
+/* Button area */
+.dialog-controls {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* Navigation button styles */
 .dialog-controls button {
-  margin: 5px;
-  padding: 10px 20px;
+  background-color: #4fc3f7;
+  /* Soft sky blue */
+  border: 2px solid #0288d1;
+  /* Dark blue border */
+  color: white;
+  /* White text */
+  font-family: 'Fredoka', sans-serif;
+  /* Cartoon-style font */
   font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  background-color: #007bff;
-  color: white;
+  /* Font size */
+  font-weight: bold;
+  padding: 12px 30px;
+  /* Adjust button size */
+  border-radius: 20px;
+  /* Rounded edges */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: transform 0.2s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
 }
 
+/* Disabled button styles */
 .dialog-controls button:disabled {
-  background-color: #ccc;
+  background-color: #e0e0e0;
+  /* Gray background */
+  border-color: #bdbdbd;
+  /* Gray border */
+  color: #9e9e9e;
+  /* Gray text */
   cursor: not-allowed;
+  box-shadow: none;
 }
 
+/* Hover effect for navigation buttons */
+.dialog-controls button:hover:not(:disabled) {
+  background-color: #29b6f6;
+  /* Brighter blue */
+  transform: scale(1.1);
+  /* Zoom in on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Deepen shadow */
+}
+
+/* Image group toggle button container */
+.dialog-group-controls {
+  display: flex;
+  justify-content: center;
+  /* Center align */
+  gap: 20px;
+  /* Space between buttons */
+  margin-top: 20px;
+}
+
+/* Image group toggle button styles */
 .dialog-group-controls button {
-  margin: 5px;
-  padding: 10px 15px;
+  background-color: #fff59d;
+  /* Soft light yellow */
+  border: 2px solid #fbc02d;
+  /* Dark yellow border */
+  font-family: 'Fredoka', sans-serif;
+  /* Cartoon-style font */
   font-size: 14px;
-  border: 1px solid #007bff;
-  border-radius: 5px;
-  background-color: white;
-  color: #007bff;
+  /* Font size */
+  font-weight: bold;
+  color: #333;
+  /* Dark gray text */
+  padding: 10px 20px;
+  border-radius: 20px;
+  /* Rounded edges */
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* Add shadow */
 }
 
-.dialog-group-controls button.active {
-  background-color: #007bff;
-  color: white;
-}
-
+/* Hover effect for image group toggle buttons */
 .dialog-group-controls button:hover:not(.active) {
-  background-color: #f0f8ff;
+  background-color: #ffeb3b;
+  /* Brighter yellow */
+  border-color: #fbc02d;
+  /* Dark yellow border */
+  transform: scale(1.1);
+  /* Zoom in on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Deepen shadow */
+}
+
+/* Active state for image group toggle buttons */
+.dialog-group-controls button.active {
+  background-color: #fbc02d;
+  /* Dark yellow */
+  color: rgb(63, 112, 202);
+  /* Blue text */
+  border-color: #ff9800;
+  /* Orange border */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  /* Deepen shadow */
 }
