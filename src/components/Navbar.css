@@ -10,6 +10,8 @@ nav {
   /* Light blue background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   /* Shadow effect */
+  z-index: 1000;
+  /* Ensure navbar stays above other elements */
 }
 
 /* Ricky Rain Frog title styles */
@@ -55,6 +57,7 @@ nav h1 {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-left: 10px;
 }
 
 /* Take Ricky Home button styles */
@@ -71,6 +74,7 @@ nav h1 {
   height: 40px;
   display: flex;
   align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Hover effect for Take Ricky Home button */
@@ -78,6 +82,7 @@ nav h1 {
   transform: scale(1.2);
   background-color: #ffdab9;
   color: #333;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
 /* Theme toggle button container */
@@ -100,6 +105,13 @@ nav h1 {
   justify-content: center;
   align-items: center;
   transition: transform 0.2s ease, background-color 0.2s ease, border-color 0.2s ease;
+  border-radius: 50%;
+}
+
+/* Active theme button */
+.theme-button.active {
+  background-color: rgba(173, 216, 230, 0.5);
+  border-color: #82c5e6;
 }
 
 /* Hover effect for theme toggle button */

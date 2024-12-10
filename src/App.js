@@ -31,13 +31,13 @@ function App() {
 
   // Set the default theme when the app loads
   useEffect(() => {
-    handleThemeChange('frog');
+    handleThemeChange('frog'); // Default theme is "frog"
   }, []);
 
   return (
     <Router>
       {/* Navigation bar */}
-      <Navbar onThemeChange={handleThemeChange} />
+      <Navbar onThemeChange={handleThemeChange} theme={theme} />
       <Routes>
         {/* Route for the Home page */}
         <Route path="/" element={<Home />} />
